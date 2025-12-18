@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+      
+     <LinearLayout
+       android:id="@+id/top_up_prompt"   
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical" 
+       android:visibility="gone"       
+        >
+     <View
+       android:layout_width="match_parent"
+       android:layout_height="3dp"
+       android:background="@color/home_page" />  
+          
+      <ImageView
+        android:id="@+id/close_top_up_btn"    
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"    
+        android:layout_marginBottom="5dp"     
+        android:src="@drawable/outline_close_white_48" />
+          
+  <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="2dp"
+       android:layout_marginTop="5dp"
+        >        
+      <TextView
+        android:id="@+id/show_card_prompt"     
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"     
+        android:textSize="15sp"
+        android:text="Card top up"
+        android:gravity="center"    
+        android:layout_marginLeft="10dp"
+        android:background="@null" />
+      <TextView
+        android:id="@+id/show_bank_prompt"     
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"    
+        android:textSize="15sp"
+        android:text="Bank top up"
+        android:layout_gravity="right" 
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:background="@null" />
+  </LinearLayout>   
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="2dp"
+       android:layout_marginBottom="5dp"
+        >          
+      <View
+       android:id="@+id/line_1"        
+       android:layout_width="150dp"
+       android:layout_height="5dp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="10dp"     
+       android:background="@color/grey" />  
+      <View
+       android:id="@+id/line_2"      
+       android:layout_width="150dp"
+       android:layout_height="5dp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="10dp"     
+       android:background="@color/grey" />          
+    </LinearLayout>    
+          
+          
+   <include layout="@layout/card_top_up"></include>
+  <include layout="@layout/bank_top_up"></include>  
+       </LinearLayout>
+      
+      
+      
+ <LinearLayout
+       android:id="@+id/header"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:elevation="10dp" 
+        >
+  <ImageView
+        android:id="@+id/close_page"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/outline_arrow_back_ios_white_48"/>    
+        
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Credit balance " 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    
+</LinearLayout>
+   <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="10dp"   
+       android:background="@color/light_white"
+      /> 
+      
+    <LinearLayout
+       android:id="@+id/parentLayout"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+   >   
+    
+          
+ <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="2dp"
+       android:layout_marginLeft="8dp"
+       android:layout_marginRight="8dp"
+       android:layout_marginTop="50dp"       
+       android:background="@color/white"       
+        >
+   <ImageView
+        android:id="@+id/bal_visibility"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="8dp"   
+        android:src="@drawable/outline_visibility_off_white_48"/>    
+       
+  <TextView
+        android:id="@+id/balance_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="₦2,500.00" 
+        android:layout_marginLeft="10dp" />
+     </LinearLayout>         
+      
+    <TextView
+        android:id="@+id/open_top_up_btn"   
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Add card/account"
+        android:textColor="@color/white" 
+        android:padding="10dp"          
+        android:gravity="center"    
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"    
+        android:layout_marginTop="30dp"   
+        android:background="@drawable/cornered_default" />
+        <TextView
+        android:id="@+id/open_saved_details"   
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Top up balance"
+        android:textColor="@color/white" 
+        android:padding="10dp"          
+        android:gravity="center"    
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"    
+        android:layout_marginTop="12dp"   
+        android:background="@drawable/cornered_default" />
+               
+             
+    </LinearLayout>  
+      
+      
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="2dp"
+       android:layout_marginTop="5dp"
+        >        
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"     
+        android:textSize="15sp"
+        android:textStyle="bold" 
+        android:text="Transaction history"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@null" />
+  </LinearLayout>   
+  
+      
+      
+ <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="2dp"
+       android:layout_marginTop="5dp"
+        >
+      
+     <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="12dp"
+       android:elevation="15dp"
+       android:layout_marginBottom="5dp"           
+       android:layout_marginTop="5dp">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"    
+        android:textSize="15sp"
+        android:textStyle="bold"       
+        android:text="$300.00"
+        android:gravity="center" 
+        android:layout_gravity="center"               
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"       
+        android:background="@null" />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"     
+        android:textSize="13sp"
+        android:text="23 April,2025 at 11:55PM"
+        android:layout_marginLeft="10dp"
+        android:background="@null" /> 
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"    
+        android:textSize="15sp"
+        android:textStyle="bold" 
+        android:textColor="@color/red"               
+        android:text="successful"
+        android:gravity="right" 
+        android:layout_gravity="right"               
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"       
+        android:background="@null" />
+     </LinearLayout>
+
+      
+    </LinearLayout> 
+      </ScrollView>
+      
+      
+      
+      
+    <!--LinearLayout
+       android:id="@+id/top_up_prompt"   
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+        > 
+     <View
+       android:layout_width="match_parent"
+       android:layout_height="3dp"
+       android:background="@color/home_page" />  
+          
+      <ImageView
+        android:id="@+id/close_top_up_btn"    
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"    
+        android:layout_marginBottom="5dp"     
+        android:src="@drawable/outline_close_white_48" />
+          
+  <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="2dp"
+       android:layout_marginTop="5dp"
+        >        
+      <TextView
+        android:id="@+id/show_card_prompt"     
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"     
+        android:textSize="15sp"
+        android:text="Card top up"
+        android:gravity="center"    
+        android:layout_marginLeft="10dp"
+        android:background="@null" />
+      <TextView
+        android:id="@+id/show_bank_prompt"     
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"    
+        android:textSize="15sp"
+        android:text="Bank top up"
+        android:layout_gravity="right" 
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:background="@null" />
+  </LinearLayout>   
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="2dp"
+       android:layout_marginBottom="5dp"
+        >          
+      <View
+       android:id="@+id/line_1"        
+       android:layout_width="150dp"
+       android:layout_height="5dp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="10dp"     
+       android:background="@color/grey" />  
+      <View
+       android:id="@+id/line_2"      
+       android:layout_width="150dp"
+       android:layout_height="5dp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="10dp"     
+       android:background="@color/grey" />          
+    </LinearLayout>    
+          
+          
+   <include layout="@layout/card_top_up"></include>
+  <include layout="@layout/bank_top_up"></include>        
+    </LinearLayout-->  
+      
+    
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+    
+    <!-- Base application theme. -->
+<style name="AppTheme" parent="@android:style/Theme.Holo">
+   <item name="android:background">@null</item>
+   <item name="android:textColor">@color/black</item>
+   <item name="android:textColorPrimary">@color/black</item>
+    <item name="android:actionModeBackground">@color/black</item>
+    <item name="android:textColorHighlight">@color/black</item>
+
+
+    </style>
+<style name="Theme.TransparentActivity" parent="@android:style/Theme.Holo">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowIsTranslucent">true</item>
+</style>
+   
+<style name="NumberPickerTheme" >
+    <item name="android:textColorPrimary">@color/home_page</item>
+   <item name="android:background">@color/transparent</item>
+   <item name="android:textColor">@color/home_page</item>
+</style>
+
+</resources>

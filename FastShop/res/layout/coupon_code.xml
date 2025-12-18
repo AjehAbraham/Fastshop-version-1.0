@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"   >
+      
+  <LinearLayout
+       android:id="@+id/header"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:elevation="10dp" 
+        >
+  <ImageView
+        android:id="@+id/close_page"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/outline_arrow_back_ios_white_48"/>    
+        
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Couppon and Gifts" 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    
+</LinearLayout>
+   <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="10dp"   
+       android:background="@color/light_white"
+      />   
+    
+    
+     <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="10dp">
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Redeem Coupon code" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"/>
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:hint="enter coupon code to redeem" 
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"           
+        android:background="@drawable/cornered_layout"/>
+          
+       <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Redeem"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"    
+        android:background="@drawable/cornered_default"/>
+    </LinearLayout> 
+    
+      
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text=" Coupon and Gifts" 
+        android:gravity="center"  
+        android:layout_gravity="center"              
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"/>
+      
+   <View 
+       android:layout_width="match_parent"
+       android:layout_height="5dp"
+       android:layout_marginBottom="5dp"   
+       android:background="@color/home_page"
+      />   
+
+   <LinearLayout
+       android:id="@+id/parentLayout"       
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="10dp">
+            
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="10dp">  
+  <ImageView
+        android:id="@+id/image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/outline_card_giftcard_white_48"/>    
+                 
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"      
+        android:textSize="15sp"
+        android:text="Free delivery"
+        android:layout_gravity="center" 
+        android:gravity="center"
+        android:background="@null"/>
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Expired"
+        android:textColor="@color/red"      
+        android:layout_gravity="right" 
+        android:gravity="right"
+        android:layout_marginRight="5dp"    
+        android:background="@null"/> 
+    </LinearLayout>    
+         
+     <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="5dp"   
+       android:background="@color/green"
+      />   
+         
+  <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="10dp">  
+  <ImageView
+        android:id="@+id/image2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left" 
+        android:gravity="left"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/outline_local_grocery_store_white_48"/>    
+             
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"     
+        android:textSize="15sp"
+        android:text="2% discount on Grocery"
+        android:layout_gravity="center" 
+        android:gravity="center"
+        android:background="@null"/>
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Expires in 1 Month"
+        android:textColor="@color/tomato"      
+        android:layout_gravity="right" 
+        android:gravity="right"
+        android:layout_marginRight="5dp"    
+        android:background="@null"/> 
+    </LinearLayout>
+<View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="5dp"   
+       android:background="@color/green"
+      />
+         
+   </LinearLayout>  
+            
+            
+      
+</LinearLayout>

@@ -1,0 +1,285 @@
+<?xml version ="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+  
+  <LinearLayout
+       android:id="@+id/parentLayout"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Create Account"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@null"/>
+    
+  <RadioGroup
+    android:id="@+id/radio_group"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp" >
+
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:text="Email"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"          
+        android:background="@null"/> 
+    <RadioButton
+        android:id="@+id/email_selector"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:gravity="center"  
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/radio_button_selector"/>
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Phone number"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"          
+        android:background="@null"/> 
+     
+    <RadioButton
+        android:id="@+id/tel_selector"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:gravity="center" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/radio_button_selector"/>
+</RadioGroup>  
+       
+    <LinearLayout
+      android:id="@+id/create_account_email"      
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:visibility="gone">
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="email" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"/>
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:hint="your email" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"     
+        android:background="@drawable/cornered_layout"/>
+       <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="password" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" 
+        android:background="@null"/>
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:hint="your email password" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"     
+        android:background="@drawable/cornered_layout"/> 
+      <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Create account"
+        android:textColor="@color/white"
+        android:padding="2dp"    
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cornered_default"/>   
+    </LinearLayout>      
+       
+    <LinearLayout
+      android:id="@+id/create_account_tel"      
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:visibility="gone">
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Phone number" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <Spinner
+        android:id="@+id/tel_codes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-10dp"
+        android:background="@null"/>
+       <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:textSize="15sp"
+        android:hint="phone number"
+        android:inputType="number"  
+        android:padding="10dp" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"     
+        android:background="@drawable/cornered_layout"/>       
+  </LinearLayout>
+       <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="password" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" 
+        android:background="@null"/>
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:hint="your password" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"     
+        android:background="@drawable/cornered_layout"/> 
+      <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="Create account"
+        android:textColor="@color/white"
+        android:padding="5dp"    
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/cornered_default"/>   
+    </LinearLayout>             
+          
+  <LinearLayout
+      android:id="@+id/sign_in_gmail"      
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"  
+      android:gravity="center"
+      android:padding="10dp"    
+      android:layout_marginLeft="12dp"
+      android:layout_marginRight="12dp"
+      android:layout_marginTop="10dp"
+      android:background="@drawable/cornered_layout"> 
+   <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/gmail_logo"/>    
+        
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Gmail sign up " 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+  </LinearLayout>
+   <LinearLayout
+      android:id="@+id/sign_in_facebook"      
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center" 
+      android:padding="10dp"
+      android:orientation="horizontal"
+      android:layout_marginLeft="12dp"
+      android:layout_marginRight="12dp" 
+      android:layout_marginTop="10dp"
+      android:background="@drawable/cornered_layout"> 
+   <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/facebook_logo"/>    
+        
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="facebook sign up " 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+  </LinearLayout>
+</LinearLayout>
+    
+      
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center"         
+      android:layout_marginLeft="12dp"
+      android:layout_marginRight="12dp"
+      android:layout_marginTop="5dp"
+      android:background="@null">
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Already have an account?"
+        android:background="@null"/>
+   <TextView
+        android:id="@+id/backTologinBtn"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/home_page" 
+        android:text="Login" 
+        android:layout_marginLeft="5dp"
+        android:background="@null"/>         
+  </LinearLayout>     
+         
+    
+</LinearLayout>

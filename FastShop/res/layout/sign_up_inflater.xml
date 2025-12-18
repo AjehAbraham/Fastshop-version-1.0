@@ -1,0 +1,71 @@
+<?xml  version="1.0" encoding ="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_prompt_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@null">
+    <LinearLayout
+       android:id="@+id/loginBtn"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:padding="5dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="5dp"
+       android:background="@drawable/cornered_default">
+     <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="5dp"
+        android:background="@null"
+        android:src="@drawable/outline_login_white_48"/>    
+        
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Sign in" 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    </LinearLayout>
+   
+   <LinearLayout
+       android:id="@+id/createAcctBtn"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:padding="5dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="5dp"
+       android:background="@drawable/cornered_default">
+     <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="5dp"
+        android:background="@null"
+        android:src="@drawable/outline_person_white_48"/>    
+        
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Create account" 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    </LinearLayout>
+   
+   
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone"  
+    android:id="@+id/card_top_up_container_main"    
+      >
+      
+    <LinearLayout
+       android:id="@+id/picker"   
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:padding="2dp"
+       android:visibility="gone"  
+        >  
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal">
+
+    <NumberPicker
+        android:id="@+id/monthPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:theme="@style/NumberPickerTheme" />
+
+    <NumberPicker
+        android:id="@+id/yearPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:theme="@style/NumberPickerTheme" />
+
+</LinearLayout>
+
+
+      <Button
+       android:id="@+id/close_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="Confirm date"
+        android:gravity="center"      
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"       
+        android:layout_marginBottom="8dp"
+        android:padding="10dp"      
+        android:background="@drawable/cornered_default"/>       
+                    
+    </LinearLayout>    
+     
+      
+      
+<LinearLayout
+       android:id="@+id/card_top_up_header"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="2dp"
+       android:layout_marginTop="5dp"
+       android:layout_marginBottom="5dp"
+        >
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Supported card  " 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+      <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/master_card_logo"/>    
+       <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/visa_card_logo"/>    
+       <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/verve_card_logo"/>
+</LinearLayout> 
+      
+      
+  <LinearLayout
+       android:id="@+id/card_top_up_container"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="2dp"
+       android:layout_marginTop="30dp"   
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="Card number " 
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"    
+        android:background="@null"/>       
+        
+       <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:inputType="number" 
+        android:digits="0123456789"
+        android:maxLength="19"
+        android:padding="10dp"             
+        android:privateImeOptions="nm"      
+        android:hint="enter your 16-19 digit card number"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="12dp"             
+        android:background="@drawable/cornered_layout"/>   
+        
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="2dp"
+        >
+     <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"    
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="Cvv" 
+        android:layout_gravity="left"
+        android:gravity="left"   
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"    
+        android:background="@null"/>       
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="Expiry date"
+        android:layout_gravity="right"
+        android:gravity="right"      
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"    
+        android:background="@null"/>       
+                         
+  </LinearLayout>        
+ <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="2dp"
+       android:layout_marginBottom="12dp"
+        >
+        <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"      
+        android:textSize="13sp"
+        android:inputType="number" 
+        android:digits="0123456789"
+        android:maxLength="3"
+        android:padding="10dp"              
+        android:privateImeOptions="nm"     
+        android:hint="CVV"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="100dp"      
+        android:background="@drawable/cornered_layout"/>   
+       <TextView
+        android:id="@+id/show_selected_date"     
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:padding="10dp"     
+        android:text="MM / YY "
+        android:layout_gravity="right"
+        android:gravity="right"      
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"    
+        android:background="@drawable/cornered_layout"/>
+ </LinearLayout>   
+
+        
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="Card pin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"    
+        android:background="@null"/>       
+                  
+        
+       <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:inputType="numberPassword" 
+        android:digits="0123456789"             
+        android:privateImeOptions="nm" 
+        android:maxLength="4"
+        android:padding="10dp"             
+        android:hint="enter your card pin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="12dp"             
+        android:background="@drawable/cornered_layout"/>   
+              
+        
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="Continue"
+        android:gravity="center"      
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"       
+        android:layout_marginBottom="8dp"
+        android:padding="10dp"      
+        android:background="@drawable/cornered_default"/>       
+                
+    
+  </LinearLayout>
+      
+      
+      
+</LinearLayout>

@@ -1,0 +1,257 @@
+<resources>
+    <string name="app_name">FastShop</string>
+  
+    <string-array name="cancel_order_reasons">
+     <item></item>
+    <item>I changed my mind</item>
+    <item>I made a mistake</item>
+    <item>I don\'t want to proceed</item>
+    <item>I\'ve found a better option</item>
+    <item>I need more information before proceeding</item>
+     <item>Others</item>
+</string-array>
+
+ 
+   <string-array name="suggestion">
+    <item>wristwatch</item>
+    <item>mobile phone</item>
+    <item>Hp laptop</item>
+    <item>Refrigirator</item>
+    <item>footwear</item>
+    <item>headset</item>
+    <item>standing fan</item>
+    </string-array>
+    
+  <string-array name="country">
+    <item>Nigeria</item>
+    <item>Ghana</item>
+    <item>Kenya</item>
+    <item>South Africa</item>
+    <item>Burkina Faso</item>
+    <item>United States of America</item>
+    <item>England</item>
+    <item>France</item>
+    <item>Russia</item>
+    <item>China</item>
+    <item>Egypt</item>
+    <item>Rwanda</item>
+    </string-array> 
+  
+  <string-array name="ghana_regions">
+    <item>Ahafo Region</item>
+    <item>Ashanti Region</item>
+    <item>Bono Region</item>
+    <item>Bono East Region</item>
+    <item>Central Region</item>
+    <item>Eastern Region</item>
+    <item>Greater Accra Region</item>
+    <item>North East Region</item>
+    <item>Northern Region</item>
+    <item>Oti Region</item>
+    <item>Savannah Region</item>
+    <item>Upper East Region</item>
+    <item>Upper West Region</item>
+    <item>Volta Region</item>
+    <item>Western Region</item>
+    <item>Western North Region</item>
+</string-array>
+  <string-array name="nigeria_states">
+    <item>Abia</item>
+    <item>Adamawa</item>
+    <item>Akwa Ibom</item>
+    <item>Anambra</item>
+    <item>Bauchi</item>
+    <item>Bayelsa</item>
+    <item>Benue</item>
+    <item>Borno</item>
+    <item>Cross River</item>
+    <item>Delta</item>
+    <item>Ebonyi</item>
+    <item>Edo</item>
+    <item>Ekiti</item>
+    <item>Enugu</item>
+    <item>Gombe</item>
+    <item>Imo</item>
+    <item>Jigawa</item>
+    <item>Kaduna</item>
+    <item>Kano</item>
+    <item>Katsina</item>
+    <item>Kebbi</item>
+    <item>Kogi</item>
+    <item>Kwara</item>
+    <item>Lagos</item>
+    <item>Nasarawa</item>
+    <item>Niger</item>
+    <item>Ogun</item>
+    <item>Ondo</item>
+    <item>Osun</item>
+    <item>Oyo</item>
+    <item>Plateau</item>
+    <item>Rivers</item>
+    <item>Sokoto</item>
+    <item>Taraba</item>
+    <item>Yobe</item>
+    <item>Zamfara</item>
+    <item>Federal Capital Territory (Abuja)</item>
+</string-array>
+  
+  <string-array name="south_africa_provinces">
+    <item>Eastern Cape</item>
+    <item>Free State</item>
+    <item>Gauteng</item>
+    <item>KwaZulu-Natal</item>
+    <item>Limpopo</item>
+    <item>Mpumalanga</item>
+    <item>North West</item>
+    <item>Northern Cape</item>
+    <item>Western Cape</item>
+</string-array>
+  
+  
+    <string-array name="common_color">
+        <item>Black</item>
+        <item>White</item>
+        <item>Grey</item>
+        <item>Green</item>
+        <item>Blue</item>
+       <item>Red</item>
+       <item>Gold</item>
+      <item>Silver</item>
+    </string-array> 
+    
+    <string-array name="banks">
+    <item>Lazerwave</item>
+    <item>Zenith Bank Plc</item>
+    <item>Access Bank</item>
+    <item>Kuda</item>
+    <item>Opay</item>
+    <item>PalmPay</item>
+    <item>Moniepoint</item>
+    </string-array>
+      
+  <string-array name="search_categories">
+    <item>All</item>
+    <item>Appliance</item>
+    <item>Tools</item>
+    <item>Mobile Phone</item>
+    <item>Electronics</item>
+    <item>Fashion</item>
+    <item>Home Decor</item>
+    <item>Kitchenware</item>
+    <item>Sports</item>
+    <item>Outdoor Gear</item>
+    <item>Beauty</item>
+    <item>Cosmetics</item>
+    <item>Health</item>
+    <item>Baby and Kids</item>
+    <item>Pet Supplies</item>
+    <item>Books</item>
+    <item>Music</item>
+    <item>Movies and TV</item>
+    <item>Video Games</item>
+    <item>Toys and Games</item>
+    <item>Arts and Crafts</item>
+    <!--item>Automotive</item-->
+</string-array>
+
+    <string-array name="countries">
+    <item>Nigeria</item>
+    <item>Ghana</item>
+    <item>Kenya</item>
+    <item>South Africa</item>
+    <item>Burkina Faso</item>
+    <item>United States</item>
+    <item>England</item>
+    <item>France</item>
+    <item>Russia</item>
+    <item>China</item>
+    <item>Egypt</item>
+    <item>Rwanda</item>
+</string-array>
+
+<string-array name="country_codes">
+    <item>NG</item>
+    <item>GH</item>
+    <item>KE</item>
+    <item>ZA</item>
+    <item>BF</item>
+    <item>US</item>
+    <item>GB</item>
+    <item>FR</item>
+    <item>RU</item>
+    <item>CN</item>
+    <item>EG</item>
+    <item>RW</item>
+</string-array>
+
+<string-array name="tel_codes">
+    <item>+234</item>
+    <item>+233</item>
+    <item>+254</item>
+    <item>+27</item>
+    <item>+226</item>
+    <item>+1</item>
+    <item>+44</item>
+    <item>+33</item>
+    <item>+7</item>
+    <item>+86</item>
+    <item>+20</item>
+    <item>+250</item>
+</string-array>
+
+ 
+<string-array name="official_languages">
+    <item>English</item>
+    <item>English</item>
+    <item>Swahili, English</item>
+    <item>Multiple languages</item>
+    <item>French</item>
+    <item>English</item>
+    <item>English</item>
+    <item>French</item>
+    <item>Russian</item>
+    <item>Mandarin Chinese</item>
+    <item>Arabic</item>
+    <item>Kinyarwanda, English, French</item>
+</string-array>
+<string-array name="official_language">
+    <item>English(UK)</item>
+    <item>English(US)</item>
+    <item>Swahili</item>
+    <item>French</item>
+    <item>Russian</item>
+    <item>Mandarin Chinese</item>
+    <item>Arabic</item>
+    <item>Kinyarwanda</item>
+</string-array>
+
+  
+  
+<string-array name="currencies">
+    <item>Naira (₦)</item>
+    <item>Ghanaian Cedi (GHS)</item>
+    <item>Kenyan Shilling (KES)</item>
+    <item>South African Rand (ZAR)</item>
+    <item>West African CFA Franc (XOF)</item>
+    <item>United States Dollar (USD)</item>
+    <item>Pound Sterling (GBP)</item>
+    <item>Euro (EUR)</item>
+    <item>Russian Ruble (RUB)</item>
+    <item>Renminbi (RMB/CNY)</item>
+    <item>Egyptian Pound (EGP)</item>
+    <item>Rwandan Franc (RWF)</item>
+</string-array>
+  
+  
+  
+  
+<string-array name="terms">
+    <item>FastShop Terms and Conditions* *Introduction: Welcome to FastShop, a Java-based application designed to provide a seamless and efficient shopping experience. By using FastShop, you agree to be bound by these Terms and Conditions. Please read them carefully before using the application. *Definitions:* 1. *FastShop*: Refers to the FastShop application, including its software, services, and content. 2. *User*: Refers to anyone who uses FastShop, including customers, administrators, and developers. 3. *Content*: Refers to any information, data, or materials displayed or transmitted through FastShop. *Usage Terms:* 1. *Personal Use*: FastShop is intended for personal, non-commercial use. You agree to use the application for legitimate purposes only. 2. *Account Security*: You are responsible for maintaining the security of your account and password. You agree to notify us immediately of any unauthorized use of your account. 3. *Content Ownership*: All content displayed on FastShop is owned by the respective rights holders. You agree not to reproduce, distribute, or modify any content without permission. *Payment and Transactions:* 1. *Payment Methods*: FastShop accepts various payment methods, including credit cards and online payment gateways. 2. *Transaction Fees*: FastShop may charge transaction fees, which will be clearly displayed before completing a purchase. 3. *Payment Security*: FastShop uses secure payment processing to protect your financial information. *Warranty Disclaimer:* FastShop is provided &quot;as is&quot; without warranty of any kind, express or implied. We do not guarantee that the application will be error-free or uninterrupted. *Limitation of Liability:* In no event will FastShop, its developers, or affiliates be liable for any damages, including indirect, incidental, special, or consequential damages, arising out of the use of the application. *Governing Law:* These Terms and Conditions shall be governed by and construed in accordance with the laws of [Your Country/State]. Any disputes arising out of these Terms and Conditions shall be resolved through [Dispute Resolution Method]. *Changes to Terms and Conditions:* FastShop reserves the right to modify these Terms and Conditions at any time without notice. Your continued use of the application constitutes your acceptance of any changes. *Contact Us:* If you have any questions or concerns about FastShop or these Terms and Conditions, please contact us at [Your Contact Information]. *April 17,2025:* These Terms and Conditions were last updated on [April 27,2025]. By using FastShop, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</item>
+</string-array>
+
+<string-array name="about">
+    <item>About FastShop FastShop is a Java-based application designed to provide a seamless and efficient shopping experience. With a focus on speed, simplicity, and user-friendliness, FastShop aims to make online shopping a breeze. Key Features: 1. Fast and Efficient: FastShop is built to provide quick and efficient performance, ensuring that users can browse and purchase products without any delays. 2. User-Friendly Interface: The application features a clean and intuitive interface, making it easy for users to navigate and find what they are looking for. 3. Product Management: FastShop allows administrators to easily manage products, including adding, editing, and removing items from the catalog. 4. Secure Payment Processing: The application integrates secure payment processing, ensuring that transactions are safe and reliable. Goals: 1. Improve Shopping Experience: FastShop aims to provide a smooth and enjoyable shopping experience for users. 2. Increase Sales: By providing a fast and efficient shopping experience, FastShop aims to increase sales and revenue for businesses. 3. Enhance Customer Satisfaction: The application is designed to meet the needs of customers, providing a positive and satisfying shopping experience. Future Development: As FastShop continues to evolve, future updates may include features such as: 1. Personalized Recommendations: Providing users with personalized product recommendations based on their browsing and purchase history. 2. Mobile Optimization: Optimizing the application for mobile devices to provide a seamless shopping experience on-the-go. 3. Integration with Social Media: Integrating FastShop with social media platforms to enhance customer engagement and reach a wider audience. Thank you for choosing FastShop</item>
+</string-array>
+
+
+</resources>

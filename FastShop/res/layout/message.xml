@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"   >
+      
+      
+    
+<LinearLayout
+       android:id="@+id/header"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:elevation="10dp" 
+        >
+  <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/outline_arrow_back_ios_white_48"/>    
+        
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Message" 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    
+</LinearLayout>
+   <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="10dp"   
+       android:background="@color/light_white"
+      /> 
+      
+      
+ <LinearLayout
+       android:id="@+id/parentLayout"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+        >   
+      
+ <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="5dp"
+       android:elevation="20dp"
+       android:layout_gravity="center"
+       android:layout_marginRight="5dp" 
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="5dp"
+        >
+  <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+        >
+      <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/outline_account_circle_white_48"/>  
+  <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:text="Promotions"
+        android:background="@null"/> 
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:textSize="15sp"
+        android:layout_marginRight="5dp"
+        android:text="Apr 27 2025"
+        android:background="@null"/>         
+  </LinearLayout>               
+                
+ <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+        >    
+  <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:layout_marginLeft="15dp"
+        android:text="Hello Ajeh....."
+        android:background="@null"/>
+       
+     <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:gravity="center"    
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_marginRight="5dp"
+        android:text="37 +"
+        android:padding="5dp"   
+        android:background="@drawable/circular_background"/>
+     </LinearLayout>          
+ </LinearLayout>
+      <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="5dp"     
+       android:background="@color/light_white"
+      />    
+       
+       
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="5dp"
+       android:elevation="20dp"
+       android:layout_gravity="center"
+       android:layout_marginRight="5dp" 
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="5dp"
+        >
+  <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+        >
+      <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/outline_account_circle_white_48"/>  
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:text="Orders &amp; Shipping"
+        android:background="@null"/> 
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:textSize="15sp"
+        android:layout_marginRight="5dp"
+        android:text=" "
+        android:background="@null"/>         
+  </LinearLayout>               
+            
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+        >              
+       
+  <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:layout_marginLeft="15dp"
+        android:text="Keep up with all orders"
+        android:background="@null"/>
+       
+     <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:gravity="center"    
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_marginRight="5dp"
+        android:text="2"
+        android:padding="5dp"   
+        android:background="@drawable/circular_background"/>
+     </LinearLayout>          
+      </LinearLayout>
+      <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="5dp"     
+       android:background="@color/light_white"
+      />    
+       
+         
+       
+       
+       
+       
+            
+      </LinearLayout>   
+      
+      
+</LinearLayout>

@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    
+   <FrameLayout
+       android:id="@+id/prompt"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:visibility="gone"
+       android:background="@null" >      
+   </FrameLayout>
+    
+  <LinearLayout
+       android:id="@+id/header"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:elevation="10dp">
+  <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/outline_arrow_back_ios_white_48"/>    
+        
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Checkout" 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    
+</LinearLayout>
+   <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="10dp"   
+       android:background="@color/light_white"/>    
+    
+     <LinearLayout
+       android:id="@+id/important"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"   
+       android:background="@color/light_white" >      
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever" 
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+        android:singleLine="true"     
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:padding="5dp"     
+        android:textColor="@color/orange"
+        android:text="Beware of scammers using call,sms and or email claiming to be Fastshop,asking for your personal details.We will never call you to ask for your password,card details or house address."
+        android:background="@null"/>
+     </LinearLayout>    
+    
+    
+    <ScrollView 
+    android:layout_width="match_parent" 
+    android:layout_height="0dp"
+    android:layout_weight="1">  
+    <LinearLayout
+       android:id="@+id/parentLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="5dp"
+       android:background="@null" >      
+        
+  <LinearLayout
+       android:id="@+id/semi_important"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="5dp"
+       android:layout_marginBottom="5dp"   
+       android:background="@null" > 
+      <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_margin="12dp">
+      <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/outline_check_circle_black_48"/>    
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Fast Payment"
+        android:background="@null"/>
+      </LinearLayout>    
+      <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_margin="12dp" >
+      <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/outline_check_circle_black_48"/>    
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Fast Shipping"
+        android:background="@null"/>
+      </LinearLayout>   
+      <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_margin="12dp"    >
+      <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/outline_check_circle_black_48"/>    
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Fast Delivery"
+        android:background="@null"/>
+      </LinearLayout>
+       <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_margin="12dp"    >
+      <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/outline_check_circle_black_48"/>    
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Reliable"
+        android:background="@null"/>     
+      </LinearLayout>
+     </LinearLayout>     
+        
+        
+ <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:padding="5dp"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:overScrollMode="never">
+  <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal">
+     <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp">  
+     <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/samsung_galaxy_a1"/>
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Samsung Galaxy A1"
+        android:background="@null"/>
+     </LinearLayout>
+     <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"    >  
+     <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/samsung_galaxy_a1"/>
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Samsung Galaxy A1"
+        android:background="@null"/>
+     </LinearLayout>
+     <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"   >  
+     <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/samsung_galaxy_a1"/>
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Samsung Galaxy A1"
+        android:background="@null"/>
+     </LinearLayout>
+     <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"  >  
+     <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/samsung_galaxy_a1"/>
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Samsung Galaxy A1"
+        android:background="@null"/>
+     </LinearLayout>
+     <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"   >  
+     <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/samsung_galaxy_a1"/>
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Samsung Galaxy A1"
+        android:background="@null"/>
+     </LinearLayout>
+      
+    </LinearLayout>
+ </HorizontalScrollView> 
+        
+     <LinearLayout
+         android:id="@+id/details_container"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_gravity="right"
+         android:gravity="center_horizontal"
+         android:padding="5dp"
+         android:background="@color/light_white">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="2dp"    
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Sub total: "
+        android:background="@null"/>  
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="2dp"    
+        android:textSize="13sp"
+        android:text="₦568,000.00" />  
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="2dp"  
+        android:textSize="13sp"
+        android:textStyle="bold"   
+        android:text=" Edit" />
+       <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="3dp"    
+        android:src="@drawable/outline_chevron_right_white_48"/>   
+        </LinearLayout>
+        
+        
+        
+       <LinearLayout
+       android:id="@+id/less_important"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:gravity="center_vertical"
+       android:padding="5dp"     
+       android:layout_marginTop="5dp"
+       android:layout_marginBottom="5dp"   
+       android:background="@color/light_white" >      
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"           
+        android:text="Delivery Fee Details"
+        android:layout_marginTop="10dp"          
+        android:layout_marginBottom="10dp"
+        android:background="@null"/>
+   
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="- The delivery fee is calculated based on the distance between our warehouse and your delivery location."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="- The fee may vary depending on the location, weight, and size of the package."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="- We strive to provide competitive and transparent pricing for our delivery services."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="- Any additional fees or charges imposed by third-party logistics providers will provide a detailed breakdown of the costs."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"           
+        android:text="Return Policy Details:"
+        android:layout_marginTop="10dp"          
+        android:layout_marginBottom="10dp"
+        android:background="@null"/>
+   
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="- Returns are accepted within 7 days of delivery or pickup from a delivery/pickup station."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="- To initiate a return, please contact our customer support team with your order details and reason for return."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/> 
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="- Items must be in their original packaging and condition to be eligible for a return or exchange."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/> 
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="- Refunds will be processed within 3-5 business days [Depending or your payment method] of receiving the returned item."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/> 
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="- Exchange options are available for items that are in stock and of equal or lesser value."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/> 
+    
+          <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"           
+        android:text="Terms and conditions apply:"
+        android:background="@null"/>
+     </LinearLayout>    
+        
+    </LinearLayout> 
+    </ScrollView>    
+    
+    
+    
+        
+     
+   <LinearLayout
+       android:id="@+id/checkout_layout"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_gravity="bottom"
+       android:gravity="bottom">  
+       
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/home_page"/>  
+  <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="8dp"
+       android:layout_marginBottom="8dp">  
+         
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"    
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Shipping fee" /> 
+         
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp"    
+        android:textSize="13sp"
+        android:text="₦568,000.00" />    
+   </LinearLayout>  
+       
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="8dp"
+       android:layout_marginBottom="8dp" >  
+         
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"    
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="VAT(15%)" /> 
+         
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp"    
+        android:textSize="13sp"
+        android:text="₦25,780.87" />    
+   </LinearLayout>
+       
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="8dp"
+       android:layout_marginBottom="8dp" >  
+         
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"    
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Coupon code " /> 
+         
+     <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp"    
+        android:textSize="12sp"
+        android:padding="10dp" 
+        android:hint="Coupon or promo code"
+        android:background="@drawable/cornered_layout"/>    
+   </LinearLayout>     
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"    
+        android:textSize="13sp"
+        android:textColor="@color/orange"
+        android:text="Not applicable " 
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_marginTop="-1dp"/> 
+             
+       
+       
+       
+  <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="8dp"
+       android:layout_marginBottom="8dp">
+  <TextView
+       android:id="@+id/open_delivery_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:text="Choose delivery location"
+        android:background="@drawable/cornered_layout"      />
+   </LinearLayout>         
+       
+       
+     <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="8dp"
+       android:layout_marginBottom="8dp">  
+         
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"    
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Delivery fee" /> 
+         
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp"    
+        android:textSize="13sp"
+        android:text="₦1,500.00" />    
+   </LinearLayout>    
+       
+  <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="8dp"
+       android:layout_marginBottom="8dp">  
+         
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"    
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Total" /> 
+         
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp"    
+        android:textSize="13sp"
+        android:text="₦673,500.00" />    
+   </LinearLayout>    
+       
+     
+     <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Purchase"    
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="8dp" 
+        android:background="@drawable/cornered_default"/>
+   </LinearLayout>     
+</LinearLayout>

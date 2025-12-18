@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+      
+      
+<FrameLayout
+        android:id="@+id/list_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@color/partial_transparent">
+ 
+<LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="5dp"
+       android:elevation="10dp"
+       android:background="@color/white">       
+ <ImageView
+        android:id="@+id/close_layout"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/outline_close_white_48"/>    
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"           
+        android:text="Quantity" 
+        android:layout_marginTop="8dp"      
+        android:layout_marginBottom="5dp"
+        android:background="@null"/>
+        
+  <EditText
+        android:id="@+id/search_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:inputType="number"
+        android:padding="10dp" 
+        android:layout_marginTop="10dp"
+        android:hint="enter a number"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp" 
+        android:background="@drawable/edit_text"/>
+   <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null" 
+        android:layout_marginTop="5dp"          
+    />
+</LinearLayout>
+</FrameLayout>   
+       
+       
+     
+<FrameLayout
+        android:id="@+id/clear_cart_item_prompt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@color/partial_transparent"      
+    >
+
+<LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="5dp"
+       android:layout_marginTop="100dp"
+       android:background="@color/white">      
+       
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"           
+        android:text="Are you sure you want to clear all cart Items? " 
+        android:layout_marginBottom="15dp"
+        android:background="@null"/>
+       
+ 
+<LinearLayout
+       android:id="@+id/continue_btn"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_gravity="center"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:layout_marginTop="20dp"
+       android:layout_marginBottom="5dp"
+       android:gravity="center"
+       android:padding="10dp"
+       android:background="@drawable/cornered_default"
+        >     
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="No,contnue shopping" 
+        android:layout_marginLeft="5dp"
+        android:background="@null"/>
+      <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/outline_shopping_cart_white_48"
+        android:background="@null"/>
+ </LinearLayout> 
+      
+          
+      
+ <LinearLayout
+       android:id="@+id/clear_all_btn"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_gravity="center"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="5dp"
+       android:gravity="center"
+       android:padding="10dp"
+       android:background="@drawable/edit_text"
+        >     
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="Yes,clear shopping cart" 
+        android:layout_marginLeft="5dp"
+        android:background="@null"/>
+      <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/outline_remove_shopping_cart_white_48"
+        android:background="@null"/>
+ </LinearLayout>
+</LinearLayout>
+</FrameLayout>   
+   
+       
+      
+      
+    
+<LinearLayout
+       android:id="@+id/header"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:elevation="10dp">
+  <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/outline_arrow_back_ios_white_48"/>    
+        
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Shopping cart" 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    
+</LinearLayout>
+   <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="10dp"   
+       android:background="@color/light_white"
+      />
+       
+<ScrollView
+       android:id="@+id/scroll"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="2">
+  <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical" >  
+         
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="2dp"
+       android:gravity="center"     
+       android:layout_gravity="center" 
+       android:layout_marginBottom="5dp"           
+        >
+  <ImageView
+        android:id="@+id/title_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/outline_shopping_cart_white_48"/>    
+        
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Your shopping cart items" 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+</LinearLayout>  
+         
+             
+  <LinearLayout
+       android:id="@+id/cart_items_layout"    
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+         
+         
+ <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+  <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">  
+     <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/samsung_galaxy_a1"/>  
+            
+   <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+         
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"      
+        android:textSize="12sp"
+        android:textColor="@color/grey"
+        android:text="Size(EU) (2)36 (1)21...."
+        android:layout_gravity="right"
+        android:layout_marginTop="8dp"
+        android:background="@null"/>
+         
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"      
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Quantity"
+        android:layout_gravity="right"
+        android:layout_marginTop="8dp"
+        android:background="@null"/>
+               
+ <EditText
+        android:id="@+id/editText"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textSize="12sp"
+        android:text="1" 
+        android:focusable="false"
+        android:focusableInTouchMode="false"        
+        android:gravity="center" 
+        android:layout_gravity="right"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/edit_text_normal"/>
+            
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:gravity="right"    
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"   
+        android:src="@drawable/outline_delete_white_48"/>
+  </LinearLayout>        
+     <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="2dp"
+       android:layout_marginTop="5dp">  
+   <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Samsung Galaxy A1"
+        android:background="@null"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp"    
+        android:textSize="10sp"
+        android:text="₦568,000.00"
+        android:textColor="@color/grey"     
+        android:background="@null"/>    
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="2dp"    
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Sub total: "
+        android:background="@null"/>
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="3dp"    
+        android:textSize="12sp"
+        android:text="₦568,000.00"
+        android:background="@null"/>
+     </LinearLayout>
+     </LinearLayout>    
+        <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+  <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">  
+     <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/samsung_galaxy_a1"/>  
+            
+   <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+         
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"      
+        android:textSize="12sp"
+        android:textColor="@color/grey"
+        android:text="Size(EU) (2)36 (1)21...."
+        android:layout_gravity="right"
+        android:layout_marginTop="8dp"
+        android:background="@null"/>
+         
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"      
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Quantity"
+        android:layout_gravity="right"
+        android:layout_marginTop="8dp"
+        android:background="@null"/>
+               
+ <EditText
+        android:id="@+id/editText"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textSize="12sp"
+        android:text="1" 
+        android:focusable="false"
+        android:focusableInTouchMode="false"        
+        android:gravity="center" 
+        android:layout_gravity="right"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/edit_text_normal"/>
+            
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:gravity="right"    
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"   
+        android:src="@drawable/outline_delete_white_48"/>
+  </LinearLayout>        
+     <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="2dp"
+       android:layout_marginTop="5dp">  
+   <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Samsung Galaxy A1"
+        android:background="@null"/>
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp"    
+        android:textSize="10sp"
+        android:text="₦300,000.00"
+        android:textColor="@color/grey"       
+        android:background="@null"/>    
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="2dp"    
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Sub total: "
+        android:background="@null"/>         
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="3dp"    
+        android:textSize="12sp"
+        android:text="₦400,000.00"
+        android:background="@null"/>
+     </LinearLayout>
+     </LinearLayout>    
+  </LinearLayout>
+
+         
+         
+   <LinearLayout
+       android:id="@+id/clear_cart_checkout_layout"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center"
+       android:padding="10dp"
+       android:layout_marginTop="10dp" 
+       android:layout_marginBottom="10dp"   
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"   
+       android:background="@drawable/cornered_layout"
+        >     
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="Clear all cart items" 
+        android:layout_marginRight="3dp"
+        android:background="@null"/>
+      <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@null"     
+        android:src="@drawable/outline_remove_shopping_cart_white_48"/>
+ </LinearLayout>        
+         
+
+         
+  </LinearLayout>       
+ </ScrollView>
+               
+         
+         
+       
+       
+ <LinearLayout
+       android:id="@+id/checkout_layout_container"    
+       android:layout_width="match_parent"
+       android:layout_height="55dp"
+       android:orientation="horizontal">
+  <LinearLayout
+       android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:layout_weight="1" 
+       android:orientation="horizontal"
+       android:background="@color/tomato" 
+       android:padding="10dp"  >
+     <TextView
+        android:id="@+id/all_total"     
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="₦789,986,555.00"
+        android:background="@null"/>        
+  </LinearLayout>
+             
+ <LinearLayout
+       android:id="@+id/checkout_layout"    
+       android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:layout_weight="2"  
+       android:orientation="horizontal"
+       android:gravity="center"
+       android:padding="10dp"
+       android:background="@color/home_page"
+        >     
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Proceeed to checkout" 
+        android:layout_marginRight="3dp"
+        android:background="@null"/>
+      <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@null"     
+        android:src="@drawable/outline_shopping_cart_checkout_white_48"/>
+ </LinearLayout> 
+ </LinearLayout>     
+       
+       
+       
+</LinearLayout>

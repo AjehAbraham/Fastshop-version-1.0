@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <ImageView
+        android:id="@+id/close_terms"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/outline_close_white_48"/>  
+            
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"           
+        android:text="Delivery Fee Details"
+        android:layout_marginTop="10dp"          
+        android:layout_marginBottom="10dp"
+        android:background="@null"/>
+   
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="- The delivery fee is calculated based on the distance between our warehouse and your delivery location."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="- The fee may vary depending on the location, weight, and size of the package."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="- We strive to provide competitive and transparent pricing for our delivery services."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="- Any additional fees or charges imposed by third-party logistics providers will provide a detailed breakdown of the costs."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    
+    
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"           
+        android:text="Return Policy Details:"
+        android:layout_marginTop="10dp"          
+        android:layout_marginBottom="10dp"
+        android:background="@null"/>
+   
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="- Returns are accepted within 7 days of delivery or pickup from a delivery/pickup station."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="- To initiate a return, please contact our customer support team with your order details and reason for return."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/> 
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="- Items must be in their original packaging and condition to be eligible for a return or exchange."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/> 
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="- Refunds will be processed within 3-5 business days [Depending or your payment method] of receiving the returned item."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/> 
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="- Exchange options are available for items that are in stock and of equal or lesser value."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/> 
+    
+          <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"           
+        android:text="Terms and conditions apply:"
+        android:layout_marginTop="10dp"          
+        android:layout_marginBottom="10dp"
+        android:background="@null"/>
+   
+</LinearLayout>

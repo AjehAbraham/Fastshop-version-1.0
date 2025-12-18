@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"   >
+      
+
+<FrameLayout
+       android:id="@+id/sign_out_prompt"    
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:visibility="gone"
+       android:background="@color/partial_transparent"
+        >
+<LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_alignParentBottom="true"
+       android:padding="5dp"
+       android:background="@color/white"
+        >
+   <ImageView
+        android:id="@+id/close_sign_out_prompt"  
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right" 
+        android:gravity="right"            
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"        
+        android:src="@drawable/outline_close_white_48"/>    
+             
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Are you sure you want to logout?" 
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@null"/>
+
+   <TextView
+        android:id="@+id/logout_false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"  
+        android:textSize="15sp"
+        android:padding="10dp"  
+        android:text="No, keep me sign in" 
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/cornered_layout"/>  
+ <TextView
+        android:id="@+id/logout_true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="Yes, sign me out" 
+        android:padding="10dp" 
+        android:layout_marginTop="15dp" 
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/cornered_default"/>          
+      
+</LinearLayout>
+</FrameLayout>         
+     
+
+    
+<LinearLayout
+       android:id="@+id/header"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:elevation="10dp" 
+        >
+  <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/outline_arrow_back_ios_white_48"/>    
+        
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Settings" 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    
+</LinearLayout>
+   <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="10dp"   
+       android:background="@color/light_white"
+      /> 
+      
+      
+   <LinearLayout
+       android:id="@+id/parentLayout"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+        >   
+      
+ <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:elevation="20dp"
+       android:layout_gravity="center"
+       android:layout_marginRight="5dp" 
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="5dp"
+        >
+  <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        android:text="Account security"
+        android:background="@null"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right" 
+        android:gravity="right"            
+        android:layout_marginRight="5dp"
+        android:src="@drawable/outline_chevron_right_white_48"/>    
+                     
+           
+     </LinearLayout>          
+    
+      <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="5dp"     
+       android:background="@color/light_white"
+      />    
+         
+         
+ <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:elevation="20dp"
+       android:layout_gravity="center"
+       android:layout_marginRight="5dp" 
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="5dp"
+        >
+  <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        android:text="Country &amp; Region"
+        android:background="@null"/>
+  <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textSize="15sp"
+        android:layout_marginRight="2dp"
+        android:text="NG"
+        android:background="@null"/>
+      <ImageView
+        android:id="@+id/country_image"     
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right" 
+        android:gravity="right"            
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="2dp"    
+        android:src="@drawable/outline_chevron_right_white_48"/>
+   <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right" 
+        android:gravity="right"            
+        android:layout_marginRight="5dp"
+        android:src="@drawable/outline_chevron_right_white_48"/>    
+              
+           
+     </LinearLayout>          
+    
+      <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="5dp"     
+       android:background="@color/light_white"
+      />            
+      
+  <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:elevation="20dp"
+       android:layout_gravity="center"
+       android:layout_marginRight="5dp" 
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="5dp"
+        >
+  <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        android:text="Language"
+        android:background="@null"/>
+   <TextView
+         android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+         android:gravity="right"
+        android:textSize="15sp"
+        android:layout_marginRight="5dp"
+        android:text="English"
+        android:background="@null"/>      
+       
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right" 
+        android:gravity="right"            
+        android:layout_marginRight="5dp"
+        android:src="@drawable/outline_chevron_right_white_48"/>    
+                   
+           
+     </LinearLayout>          
+    
+      <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="5dp"     
+       android:background="@color/light_white"
+      />            
+            
+         
+ <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:elevation="20dp"
+       android:layout_gravity="center"
+       android:layout_marginRight="5dp" 
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="5dp"
+        >
+  <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        android:text="Currency"
+        android:background="@null"/>
+   <TextView
+         android:id="@+id/currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+         android:gravity="right"
+        android:textSize="15sp"
+        android:layout_marginRight="5dp"
+        android:text="NGN"
+        android:background="@null"/>      
+       
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right" 
+        android:gravity="right"            
+        android:layout_marginRight="5dp"
+        android:src="@drawable/outline_chevron_right_white_48"/>    
+               
+     </LinearLayout>          
+    
+      <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="5dp"     
+       android:background="@color/light_white"
+      />                
+         
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:elevation="20dp"
+       android:layout_gravity="center"
+       android:layout_marginRight="5dp" 
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="5dp"
+        >
+  <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        android:text="About"
+        android:background="@null"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right" 
+        android:gravity="right"            
+        android:layout_marginRight="5dp"
+        android:src="@drawable/outline_chevron_right_white_48"/>    
+                     
+           
+     </LinearLayout>          
+    
+      <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="5dp"     
+       android:background="@color/light_white"
+      />                
+             
+         
+         
+ <LinearLayout
+       android:id="@+id/logout"      
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:elevation="20dp"
+       android:layout_gravity="center"
+       android:layout_marginRight="5dp" 
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="5dp"
+        >
+  <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"
+        android:text="Sign out"
+        android:background="@null"/>
+            
+   <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right" 
+        android:gravity="right"            
+        android:layout_marginRight="5dp"
+        android:src="@drawable/outline_settings_power_white_48"/>    
+                
+           
+     </LinearLayout>          
+    
+      <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="5dp"     
+       android:background="@color/light_white"
+      />
+   </LinearLayout>
+     
+     
+  
+      
+     
+</LinearLayout>      
+    

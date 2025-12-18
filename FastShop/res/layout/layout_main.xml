@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    
+     <FrameLayout 
+       android:id="@+id/cart_prompt_layout_view"    
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:visibility="gone"
+       android:background="@color/partial_transparent"
+       android:orientation="vertical" >
+      </FrameLayout>   
+    
+    
+   <LinearLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@color/home_page"
+        android:layout_marginBottom="10dp" >
+    <TextView
+        android:id="@+id/textView_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="FastShop" 
+        android:layout_marginLeft="5dp"
+        android:background="@null"/>
+
+     <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"  
+        android:background="@null"/>
+    
+       </LinearLayout>  
+    
+    <LinearLayout
+       android:id="@+id/search_layout"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal" 
+       android:background="@drawable/cornered_layout"
+       android:padding="2dp"
+       android:gravity="center"        
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"
+       android:layout_marginBottom="10dp"
+       android:layout_marginTop="10dp"
+        >
+   <TextView
+        android:id="@+id/search_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Search or scan for Items,categories on FastShop"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_null"/>
+      </LinearLayout>
+    
+    
+    
+<LinearLayout
+       android:id="@+id/categories_options"  
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:elevation="20dp"
+       android:layout_marginBottom="5dp" 
+       android:background="@color/tomato"    
+        ></LinearLayout>
+  <ScrollView
+       android:id="@+id/scrollView"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:fillViewport="true" >
+  <LinearLayout
+       android:id="@+id/cart_items_parent_layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+    
+    <GridLayout
+       android:id="@+id/grid_layout"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:columnCount="2" >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:orientation="vertical"
+        android:elevation="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white">
+   
+  <LinearLayout
+        android:id="@+id/id_can_change_with_each_item"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">        
+ <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp" 
+        android:layout_gravity="center" 
+        android:gravity="center"   
+        android:src="@drawable/iwatch_black"/>
+       
+ <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_marginLeft="5dp"
+        android:text="Oriaimo smart watch 40k power bank wristwatch..."
+        android:background="@null"/>
+      
+ <TextView
+    android:id="@+id/your_text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15sp" 
+    android:layout_marginLeft="3dp" 
+    android:text="₦76,877.00"
+    android:textColor="@color/red"/>
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="3dp"
+        android:text="₦56,877.00"
+        android:background="@null"/>
+  </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="3dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:textColor="@color/deep_green"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="23 sold out"
+        android:padding="10dp"
+        android:background="@drawable/normal_layout"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:padding="10dp"
+        android:textColor="@color/tomato"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:text="15 Left"
+        android:background="@drawable/discount_layout" />
+
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginTop="3dp">
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:text="(2.4)"/>
+
+    <ImageView 
+        android:id="@+id/ratingbar_1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/outline_star_white_48"/>
+
+    <ImageView 
+        android:id="@+id/ratingbar_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/outline_star_half_white_48"/>
+
+    <ImageView 
+        android:id="@+id/ratingbar_3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/outline_star_outline_white_48"/>
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:text="(260+)"/>
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp">
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/tomato"   
+        android:layout_marginRight="5dp"
+        android:text="15% off"
+        android:padding="10dp"    
+        android:background="@drawable/discount_layout"/>
+   <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:text="Add to cart "
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="-8dp"
+        android:paddingBottom="-8dp"
+        android:background="@drawable/cornered_default"/>
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"   
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="right"    
+        android:text="options"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"   
+        android:background="@drawable/cornered_layout"/>
+   </LinearLayout>
+    </LinearLayout>  
+        
+     <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:orientation="vertical"
+        android:elevation="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white">
+   
+  <LinearLayout
+        android:id="@+id/id_can_change_with_each_item"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">        
+ <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp" 
+        android:layout_gravity="center" 
+        android:gravity="center"   
+        android:src="@drawable/iwatch_black"/>
+       
+ <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_marginLeft="5dp"
+        android:text="Oriaimo smart watch 40k power bank wristwatch..."
+        android:background="@null"/>
+      
+ <TextView
+    android:id="@+id/your_text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15sp" 
+    android:layout_marginLeft="3dp" 
+    android:text="₦76,877.00"
+    android:textColor="@color/red"/>
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="3dp"
+        android:text="₦56,877.00"
+        android:background="@null"/>
+  </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="3dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:textColor="@color/deep_green"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="23 sold out"
+        android:padding="10dp"
+        android:background="@drawable/normal_layout"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:padding="10dp"
+        android:textColor="@color/tomato"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:text="15 Left"
+        android:background="@drawable/discount_layout" />
+
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginTop="3dp">
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:text="(2.4)"/>
+
+    <ImageView 
+        android:id="@+id/ratingbar_1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/outline_star_white_48"/>
+
+    <ImageView 
+        android:id="@+id/ratingbar_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/outline_star_half_white_48"/>
+
+    <ImageView 
+        android:id="@+id/ratingbar_3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/outline_star_outline_white_48"/>
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:text="(260+)"/>
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp">
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/tomato"   
+        android:layout_marginRight="5dp"
+        android:text="15% off"
+        android:padding="10dp"    
+        android:background="@drawable/discount_layout"/>
+   <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:text="Add to cart "
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="-8dp"
+        android:paddingBottom="-8dp"
+        android:background="@drawable/cornered_default"/>
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"   
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="right"    
+        android:text="options"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"   
+        android:background="@drawable/cornered_layout"/>
+   </LinearLayout>
+    </LinearLayout>  
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:orientation="vertical"
+        android:elevation="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white">
+   
+  <LinearLayout
+        android:id="@+id/id_can_change_with_each_item"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">        
+ <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp" 
+        android:layout_gravity="center" 
+        android:gravity="center"   
+        android:src="@drawable/iwatch_black"/>
+       
+ <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_marginLeft="5dp"
+        android:text="Oriaimo smart watch 40k power bank wristwatch..."
+        android:background="@null"/>
+      
+ <TextView
+    android:id="@+id/your_text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15sp" 
+    android:layout_marginLeft="3dp" 
+    android:text="₦76,877.00"
+    android:textColor="@color/red"/>
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="3dp"
+        android:text="₦56,877.00"
+        android:background="@null"/>
+  </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="3dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:textColor="@color/deep_green"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="23 sold out"
+        android:padding="10dp"
+        android:background="@drawable/normal_layout"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:padding="10dp"
+        android:textColor="@color/tomato"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:text="15 Left"
+        android:background="@drawable/discount_layout" />
+
+</LinearLayout>
+<!--LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginTop="3dp">
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:text="(2.4)"/>
+
+    <ImageView 
+        android:id="@+id/ratingbar_1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/outline_star_white_48"/>
+
+    <ImageView 
+        android:id="@+id/ratingbar_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/outline_star_half_white_48"/>
+
+    <ImageView 
+        android:id="@+id/ratingbar_3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/outline_star_outline_white_48"/>
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:text="(260+)"/>
+
+</LinearLayout-->
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp">
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/tomato"   
+        android:layout_marginRight="5dp"
+        android:text="15% off"
+        android:padding="10dp"    
+        android:background="@drawable/discount_layout"/>
+   <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:text="Add to cart "
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="-8dp"
+        android:paddingBottom="-8dp"
+        android:background="@drawable/cornered_default"/>
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"   
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="right"    
+        android:text="options"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"   
+        android:background="@drawable/cornered_layout"/>
+   </LinearLayout>
+    </LinearLayout>  
+           
+        
+  
+    </GridLayout>
+      
+
+      <LinearLayout
+       android:id="@+id/load_cart_items_catalogue"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical" 
+       android:padding="10dp"   
+       android:layout_marginBottom="5dp"
+       android:layout_marginTop="5dp"   
+       android:background="@color/dark_blue">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Recent search"
+        android:textColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:background="@null"/>    
+      </LinearLayout>
+      
+   <LinearLayout
+       android:id="@+id/back_to_top_container"    
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_margin="5dp"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:padding="10dp"
+       android:background="@drawable/cornered_layout">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Back to top"
+        android:gravity="center"
+        android:layout_marginRight="2dp"
+        android:background="@null"/>
+       <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"  
+        android:gravity="center"    
+        android:background="@null"
+        android:src="@drawable/outline_keyboard_arrow_up_white_48"/>
+   </LinearLayout>
+     </LinearLayout> 
+  </ScrollView> 
+
+
+
+ <LinearLayout
+       android:id="@+id/navigation_layout"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+      </LinearLayout>
+    
+</LinearLayout>

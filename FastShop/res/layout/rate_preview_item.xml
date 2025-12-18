@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+       
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+        
+   <ImageView
+        android:id="@+id/close_rating_preview"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@null"
+        android:src="@drawable/outline_close_white_48"  />
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Rating" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@null"/>
+        
+      <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"     
+        android:numStars="5"
+        android:rating="1.0"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:stepSize="1.0"
+        android:layout_marginBottom="5dp"     
+        android:layout_gravity="center_vertical"/> 
+        
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Review" 
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+         android:layout_marginBottom="5dp"
+        android:background="@null"/> 
+<EditText
+       android:id="@+id/review_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="250" 
+        android:hint="send us feedback about this item"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/cornered_layout"/> 
+<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Send feedback"
+        android:textColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:paddingTop="-4dp"
+        android:paddingBottom="-4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/cornered_default"/>          
+  </LinearLayout>   
+      
+</FrameLayout>

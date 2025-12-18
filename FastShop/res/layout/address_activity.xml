@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    
+  <LinearLayout
+       android:id="@+id/edit_address_prompt"    
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:padding="2dp"
+       android:elevation="10dp"
+       android:visibility="gone"  
+       android:background="@color/partial_transparent"    
+        >
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="100dp">
+      <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="10dp"   
+       android:background="@color/home_page"
+      />
+  <ImageView
+        android:id="@+id/close_page_prompt"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/outline_close_white_48"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:padding="10dp"   
+        android:inputType="text|textNoSuggestions"
+        android:hint="your current location"
+        android:enabled="false"  
+        android:lines="3"     
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="8dp"     
+        android:background="@drawable/cornered_layout"/>
+       <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Use current location"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"    
+        android:background="@drawable/cornered_default"/> 
+           
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Country" 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+
+    <Spinner
+        android:id="@+id/spinner_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp"     
+        android:background="@null" />
+     
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="State/Region/Province" 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    <Spinner
+        android:id="@+id/spinner_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp"     
+        android:background="@drawable/cornered_layout"/>
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="LGA/District" 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    <Spinner
+        android:id="@+id/spinner_lga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:layout_marginBottom="8dp"     
+        android:background="@null"/>
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Address" 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:inputType="text|textNoSuggestions"
+        android:hint="your delivery address" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:lines="3"
+        android:minLines="3"
+        android:layout_marginBottom="8dp"     
+        android:background="@drawable/cornered_layout"/>
+       <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:padding="10dp"      
+        android:text="Update"
+        android:enabled="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"    
+        android:background="@drawable/cornered_default"/>   
+     </LinearLayout>
+</LinearLayout> 
+      
+      
+      
+      
+ <LinearLayout
+       android:id="@+id/header"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:elevation="10dp" 
+        >
+  <ImageView
+        android:id="@+id/close_page"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/outline_arrow_back_ios_white_48"/>    
+        
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="My address" 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    
+</LinearLayout>
+   <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="10dp"   
+       android:background="@color/light_white"
+      /> 
+    
+      
+       <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"    
+        android:text="All Address"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="8dp"             
+      />
+    
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+ <LinearLayout
+       android:id="@+id/parentLayout"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+   >
+     
+ <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="10dp"
+       android:elevation="10dp" 
+       android:layout_marginLeft="8dp"
+       android:layout_marginRight="8dp"
+       android:layout_marginTop="15dp"
+       android:layout_marginBottom="5dp"           
+       android:background="@color/white"       
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="Plot 36,satelite quaters,kwali,Abuja,Nigeria" 
+        android:gravity="center"    
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"    
+        android:layout_marginTop="10dp"
+        />
+         
+      <TextView
+        android:id="@+id/open_editor"    
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"    
+        android:text="Edit" 
+        android:gravity="right"
+        android:layout_gravity="right"   
+        android:layout_marginRight="18dp"    
+        android:layout_marginTop="8dp"
+        />       
+     </LinearLayout>
+     
+     
+         
+    </LinearLayout>  
+    </ScrollView> 
+    
+      
+      
+    <LinearLayout
+       android:id="@+id/add_address_btn"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:layout_marginLeft="8dp"
+       android:layout_marginRight="8dp"
+       android:layout_marginTop="15dp"
+       android:layout_marginBottom="5dp"
+       android:elevation="10dp"     
+       android:background="@color/white"       
+    >
+     <ImageView
+        android:id="@+id/add_sign" 
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/outline_add_white_36" 
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        />
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"      
+        android:textColor="@color/home_page"    
+        android:text="Add new Address"
+        android:layout_marginLeft="5dp"
+        />       
+     </LinearLayout>  
+      
+      
+    
+</LinearLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/delivery_prompt"
+    android:visibility="visible">
+   
+   <LinearLayout
+       android:id="@+id/delivery_terms"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:visibility="gone">
+      <include layout="@layout/delivery_terms"/>
+   </LinearLayout>
+   
+   
+   
+   
+  <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1">
+ <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+    
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Select delivery type"
+        android:layout_marginTop="10dp"          
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"          
+        android:background="@null"/>
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"   
+       android:padding="5dp" 
+       android:background="@drawable/cornered_layout">
+     <Spinner
+        android:id="@+id/delivery_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+   </LinearLayout>
+   
+   <LinearLayout
+       android:id="@+id/delivery_selector_options"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:visibility="gone"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Select location"
+        android:layout_marginTop="10dp"          
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"          
+        android:background="@null"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:padding="5dp" 
+       android:background="@drawable/cornered_layout">
+     <Spinner
+        android:id="@+id/pickup_location_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+   </LinearLayout>
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Select pickup station"
+        android:layout_marginTop="10dp"          
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"          
+        android:background="@null"/>
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:padding="5dp"    
+       android:background="@drawable/cornered_layout">
+    <Spinner
+        android:id="@+id/pickup_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/> 
+      </LinearLayout>  
+   </LinearLayout>
+   
+     
+   <LinearLayout
+       android:id="@+id/home_delivery_selector"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:visibility="gone">
+      <LinearLayout
+       android:id="@+id/options"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+      </LinearLayout>
+   </LinearLayout>
+
+ </LinearLayout>    
+  </ScrollView>
+   
+   
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"           
+        android:text="Delivery fee"
+        android:layout_marginTop="10dp"          
+        android:layout_marginBottom="10dp"
+        android:background="@null"/>
+   
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Delivery fee is ₦1,800.00\nNote:Delivery fee is based on the delivery location selected and may vary with distance."
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+       <TextView
+        android:id="@+id/see_more_delivery_terms"    
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_blue"
+        android:text="See more"
+        android:layout_marginTop="1dp"          
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+   
+   
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"           
+        android:text="Return policy"
+        android:layout_marginTop="10dp"          
+        android:layout_marginBottom="10dp"
+        android:background="@null"/>
+   
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="7 days after item has been delivered or pickup from delivery/pickup station"
+        android:layout_marginTop="3dp"          
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+     <TextView
+        android:id="@+id/see_more_terms" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_blue"
+        android:text="See more"
+        android:layout_marginTop="1dp"          
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+   
+      <Button
+         android:id="@+id/confirm_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm location"    
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="30dp"         
+        android:background="@drawable/cornered_default"/> 
+         
+   
+</LinearLayout>

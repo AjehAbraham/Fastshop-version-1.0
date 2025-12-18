@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/partial_transparent"  >
+      
+      <View 
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"   
+       android:background="@color/partial_transparent"/>     
+     <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@color/white">
+     <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="5dp"   
+       android:background="@color/light_white"/>           
+  <LinearLayout
+       android:id="@+id/prompt_container"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_horizontal"  
+       android:padding="5dp"
+       android:layout_margin="3dp"  
+       android:background="@drawable/cornered_layout"  >
+  <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/outline_close_white_48"/>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:padding="6dp"     
+        android:text="Cancel order"
+        android:textStyle="bold" 
+        android:layout_margin="10dp"   
+        android:background="@null"/>    
+   
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:padding="6dp"
+        android:text="Why do you want to cancel this order?" 
+        android:layout_margin="10dp"   
+        android:background="@null"/>    
+              
+   <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_normal"/>       
+  <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:inputType="text"
+        android:visibility="gone"
+        android:hint="other reasons to cancel order" 
+        android:layout_margin="8dp"
+        android:singleLine="true"
+        android:maxLines="5"
+        android:focusable="true"
+        android:textCursorDrawable="@drawable/text_cursor"
+        android:background="@drawable/edit_text_normal"/>
+     <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel order" 
+        android:padding="5dp"     
+        android:layout_margin="5dp"
+        android:background="@color/home_page"/>
+</LinearLayout>
+</LinearLayout>
+</FrameLayout>   

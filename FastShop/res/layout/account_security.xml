@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"  >
+      
+      
+     <LinearLayout
+       android:id="@+id/edit_profile_prompt"    
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:padding="2dp"
+       android:elevation="10dp"
+       android:visibility="gone"  
+       android:background="@color/partial_transparent"    
+        >
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="100dp">
+      <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="10dp"   
+       android:background="@color/home_page"
+      />
+  <ImageView
+        android:id="@+id/close_page_prompt"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/outline_close_white_48"/>
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Phone number(Optional)" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"/>
+       <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="+234 80 XXXX XXX XX"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"           
+        android:background="@drawable/cornered_layout"/>
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Email" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"/>
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="ajehabraham51@gmail.com"
+        android:padding="10dp" 
+        android:enabled="false"       
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"           
+        android:background="@drawable/cornered_layout"/>     
+        
+       <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Update details"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp" 
+        android:layout_marginTop="15dp" 
+        android:layout_marginBottom="10dp" 
+        android:background="@drawable/cornered_default"/>
+    </LinearLayout> 
+     </LinearLayout> 
+      
+      
+      
+  <LinearLayout
+       android:id="@+id/change_password_prompt"    
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:padding="2dp"
+       android:elevation="10dp"
+       android:visibility="gone"  
+       android:background="@color/partial_transparent"    
+        >
+     <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="200dp">
+      <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="10dp"   
+       android:background="@color/home_page"
+      />
+  <ImageView
+        android:id="@+id/close_password_prompt"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/outline_close_white_48"/>
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="old password" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"/>
+       <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:hint="your current password" 
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"           
+        android:background="@drawable/cornered_layout"/>
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/home_page"      
+        android:text="forgot password?" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:background="@null"/>     
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="New password" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"/>
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:hint="new password you'd like to use" 
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"           
+        android:background="@drawable/cornered_layout"/>     
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Confirm password" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"/>
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:hint="re-enter your new password" 
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"           
+        android:background="@drawable/cornered_layout"/>
+          
+       <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Update"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"    
+        android:background="@drawable/cornered_default"/>
+    </LinearLayout> 
+     </ScrollView>    
+     </LinearLayout>   
+      
+      
+      
+    <LinearLayout
+       android:id="@+id/header"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:elevation="10dp" 
+        >
+  <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/outline_arrow_back_ios_white_48"/>    
+        
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Account security" 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    
+</LinearLayout>
+   <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="10dp"   
+       android:background="@color/light_white"
+      /> 
+      
+    <LinearLayout
+       android:id="@+id/parentLayout"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+        >    
+       
+ <LinearLayout
+       android:id="@+id/form"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+        >
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textStyle="bold" 
+        android:text="Account details"
+        android:layout_gravity="center"
+        android:gravity="center" 
+        android:layout_marginBottom="10dp" 
+        android:background="@null"/>
+              
+       
+       
+ <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Full name:" 
+        android:textStyle="bold" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"/>
+         
+       
+ <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="AJEH LAZER ABRAHAM" 
+        android:inputType="text"
+        android:padding="10dp" 
+        android:enabled="false"       
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"           
+        android:background="@drawable/cornered_layout"/>     
+       
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Phone number(Primary)" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"/>
+         
+       
+ <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="+234 90 XXXX XXXX XX" 
+        android:inputType="text"
+        android:padding="10dp" 
+        android:enabled="false"       
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"           
+        android:background="@drawable/cornered_layout"/>     
+          
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Phone number(Optional)" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"/>
+         
+       
+ <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="+234 80 XXXX XXX XX" 
+        android:inputType="text"
+        android:padding="10dp" 
+        android:enabled="false"       
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"           
+        android:background="@drawable/cornered_layout"/>     
+       
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Email" 
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"/>
+         
+       
+ <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="ajehabraham51@gmail.com" 
+        android:inputType="text"
+        android:padding="10dp" 
+        android:enabled="false"       
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"           
+        android:background="@drawable/cornered_layout"/>
+  </LinearLayout>  
+          
+          
+    <TextView
+        android:id="@+id/open_prompt"    
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/white"   
+        android:text="Edit your information"
+        android:gravity="center" 
+        android:padding="10dp"          
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" 
+        android:layout_marginBottom="10dp"           
+        android:background="@drawable/cornered_default"/>
+          
+          
+  <LinearLayout
+       android:id="@+id/options"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="5dp"
+        >
+        <TextView
+        android:id="@+id/change_password_btn"       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Change password"
+        android:gravity="center" 
+        android:padding="10dp"          
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp" 
+        android:layout_marginBottom="10dp"           
+        android:background="@drawable/cornered_layout"/>
+        
+        
+     <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="10dp"
+        >
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="Shagari quater,kwali,Abuja(this device)"
+        android:gravity="center"
+        android:elevation="20dp"              
+        android:padding="10dp"          
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" 
+        android:layout_marginBottom="5dp"           
+        android:background="@color/white"/>
+    </LinearLayout>
+     </ScrollView>  
+  </LinearLayout>
+   
+        
+        
+ </LinearLayout>
+</LinearLayout>
