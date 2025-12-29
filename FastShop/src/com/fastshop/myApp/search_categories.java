@@ -85,7 +85,7 @@ public class search_categories extends Activity{
      
      search_editText  = findViewById(R.id.search_editText);
      search_editText.requestFocus();
-     getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
+     //getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
       
      
      clear_search = findViewById(R.id.clear_search);

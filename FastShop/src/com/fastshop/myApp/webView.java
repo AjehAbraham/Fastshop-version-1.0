@@ -51,9 +51,10 @@ public class webView extends Activity{
             
             if(url.equalsIgnoreCase("live_chat")){
              webView.loadUrl("https://www.example.com/live_chat");    
-            }   
+            }
             
         }catch(Exception e){
+          
          CustomToast.show(this, "Error loading web content"); 
         }
         

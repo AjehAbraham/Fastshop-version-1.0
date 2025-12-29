@@ -125,14 +125,31 @@ private void addAdapter() {
     });
      TextView textView = view.findViewById(R.id.see_more_delivery_terms);
      TextView textView2 = view.findViewById(R.id.see_more_terms);
-     showTerms(textView,textView2);
+     //showTerms(textView,textView2);
+    //showTerms(textView,textView2);
+    FrameLayout prompt = view.findViewById(R.id.terms_prompt);
+    loadTerms(prompt,textView,textView2);
 }
-  
-  private void showTerms( TextView textView_1,TextView textView_2){
+  private void loadTerms(FrameLayout container,TextView textView,TextView textView2){
+     web_content Webcontent = new web_content(context);
+     textView.setOnClickListener(new View.OnClickListener(){
+      @Override
+       public void onClick(View v) {
+          Webcontent.LoadUi(container);
+        } 
+     });
+     textView2.setOnClickListener(new View.OnClickListener(){
+      @Override
+       public void onClick(View v) {
+          Webcontent.LoadUi(container);
+        } 
+     }); 
+  }
+ /* private void showTerms( TextView textView_1,TextView textView_2){
    LinearLayout termsContainer = view.findViewById(R.id.delivery_terms);
      ImageView imageView = view.findViewById(R.id.close_terms); 
     imageView.setColorFilter(Color.GRAY,PorterDuff.Mode.SRC_IN);
-    textView_1.setOnClickListener(new View.OnClickListener(){
+    /*textView_1.setOnClickListener(new View.OnClickListener(){
      @Override
      public void onClick(View view){
      termsContainer.setVisibility(View.VISIBLE);  
@@ -151,9 +168,9 @@ private void addAdapter() {
      termsContainer.setVisibility(View.GONE);  
      } 
     });
-  }
+  }*/
 
- /* private static final int REQUEST_LOCATION_PERMISSION = 1;  
+ /*private static final int REQUEST_LOCATION_PERMISSION = 1;  
   private void checkLocationPermission(){
     if(checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED){
      requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION_PERMISSION); 

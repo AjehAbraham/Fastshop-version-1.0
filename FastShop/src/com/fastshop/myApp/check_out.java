@@ -15,7 +15,7 @@ import android.graphics.PorterDuff;
 import android.content.Intent;
 import android.view.ViewGroup;
 import android.widget.EditText;
-
+import java.util.Random;
 import android.Manifest;
 import android.content.pm.PackageManager;
 
@@ -82,9 +82,37 @@ public class check_out extends Activity {
       selector.addSelector(LocationOptions);
       */
       
+      checkIntent();
+      viewItems();
     }
-    
- 
+  
+   private void viewItems(){
+  LinearLayout items_container = findViewById(R.id.items_container);
+  for(int i = 0; i < items_container.getChildCount(); i++){
+   View viewGroup = items_container.getChildAt(i);
+   if(viewGroup instanceof LinearLayout){
+    LinearLayout layout = (LinearLayout) viewGroup;
+    layout.setOnClickListener(new View.OnClickListener(){
+     @Override
+     public void onClick(View v){
+    Intent intent = new Intent(check_out.this,ItemPreview.class);
+    if(layout.getId() != -1){
+     int layoutID = layout.getId();
+     intent.putExtra("ID", layoutID);
+    }else{
+     int layoutID = GenerateIntID();
+     layout.setId(layoutID);
+     intent.putExtra("ID", layoutID);
+    }
+    startActivity(intent);
+     }
+    });
+   }
+  }
+ } 
+ private int GenerateIntID(){
+   return new Random().nextInt(Integer.MAX_VALUE);
+ }
   private static final int REQUEST_LOCATION_PERMISSION = 1;  
   private void checkLocationPermission(){
     if(checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED){
@@ -101,7 +129,12 @@ public class check_out extends Activity {
         }
       }
     }
-  
+  private void checkIntent(){
+     if(getIntent().hasExtra("ID")){
+         String data = getIntent().getStringExtra("ID");
+         CustomToast.show(this,data);
+     }
+ }
 
   
 }

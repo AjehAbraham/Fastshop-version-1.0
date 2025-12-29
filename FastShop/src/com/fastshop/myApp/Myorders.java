@@ -9,16 +9,18 @@ import android.widget.LinearLayout;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.FrameLayout;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.Typeface;
 import android.content.Intent;
 import android.widget.HorizontalScrollView;
 import java.util.Random;
+import java.util.UUID;
 
 
 public class Myorders extends Activity{
-    
+    private String TrackingID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -174,20 +176,29 @@ private void LoadheaderMethod(LinearLayout layout) {
      });
      if(detailsLayout.getChildCount() > 0){
       View detailsView = detailsLayout.getChildAt(detailsLayout.getChildCount() -1);
-      if(detailsView instanceof ImageView){
-       ImageView forwardLogo = (ImageView) detailsView;
+      if(detailsView instanceof LinearLayout){
+       LinearLayout sub_sub_layout = (LinearLayout) detailsView;
+       if(sub_sub_layout.getChildAt(1) instanceof ImageView){
+       ImageView forwardLogo = (ImageView) sub_sub_layout.getChildAt(1);
        forwardLogo.setColorFilter(Color.GRAY,PorterDuff.Mode.SRC_IN);
+       }
       }
      }
+     
+     web_content Webcontent = new web_content(this);
      
      if (locationLayout.getChildCount() > 0) {
       View lastChild = locationLayout.getChildAt(locationLayout.getChildCount() - 1);
     if (lastChild instanceof TextView) {
         TextView changeBtn = (TextView) lastChild;
+     FrameLayout container = findViewById(R.id.container);
+     
         changeBtn.setOnClickListener(new View.OnClickListener(){
          @Override 
          public void onClick(View v){
-          CustomToast.show(Myorders.this, "Changing addrs");
+          web_content Webcontent = new web_content(Myorders.this);
+          Webcontent.LoadUi(container);
+         // CustomToast.show(Myorders.this, "Changing addrs");
          }
         });
        }
@@ -200,7 +211,13 @@ private void LoadheaderMethod(LinearLayout layout) {
        buyBtn.setOnClickListener(new View.OnClickListener(){
         @Override
         public void onClick(View v){
-         CustomToast.show(Myorders.this, "Buying again");
+         if(TrackingID != null && !TrackingID.isEmpty() && TrackingID.length() >= 10){}else{
+          TrackingID = generateID();
+         }
+         Intent intent = new Intent(Myorders.this, check_out.class);
+         intent.putExtra("ID", TrackingID);
+         startActivity(intent);
+         //CustomToast.show(Myorders.this, "Buying again");
         }
        });
       }
@@ -216,5 +233,7 @@ private void LoadheaderMethod(LinearLayout layout) {
   }
  
  
-    
+   private String generateID() {
+    return UUID.randomUUID().toString().replace("-", "").substring(0,12);
+   }
 }

@@ -128,7 +128,6 @@ public class cart_items extends Activity{
      
     cart_items_layout = findViewById(R.id.cart_items_layout); 
      changeCartTheme();
-     
     }
  
   private void redirect(){
@@ -469,6 +468,7 @@ private void updateTotalPrice() {
     }
 }
  
+    
   @Override
  protected void onResume(){
   super.onResume();

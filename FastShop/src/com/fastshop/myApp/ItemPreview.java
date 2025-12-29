@@ -82,6 +82,7 @@ public class ItemPreview extends Activity {
      }
      
      previewMethod();
+     checkIntent();
     }
  
  private ImageView item_image;
@@ -268,7 +269,12 @@ private void AddToCartMethod(EditText editText){
     }
     CustomToast.show(this, "You added me");
 }   
- 
+ private void checkIntent(){
+     if(getIntent().hasExtra("ID")){
+         String data = getIntent().getStringExtra("ID");
+         CustomToast.show(this,data);
+     }
+ }
  public void scrollToTop(ScrollView scrollView) {
     LinearLayout layout = findViewById(R.id.back_to_top_container);
      layout.setOnClickListener(new View.OnClickListener() {
