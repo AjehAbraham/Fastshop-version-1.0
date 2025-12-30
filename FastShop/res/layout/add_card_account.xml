@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+   
+ <LinearLayout
+       android:id="@+id/header"    
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       android:elevation="10dp" 
+        >
+  <ImageView
+        android:id="@+id/close_page"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="left" 
+        android:gravity="left"            
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/outline_arrow_back_ios_white_48"/>    
+        
+  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Add card/account " 
+        android:layout_marginLeft="10dp"
+        android:background="@null"/>
+    
+</LinearLayout>
+   <View 
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:layout_marginBottom="1dp"   
+       android:background="@color/light_white"/> 
+      
+  <LinearLayout
+       android:id="@+id/subLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="2dp"
+       android:layout_marginTop="5dp">  
+  <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="2dp"
+       android:layout_marginTop="2dp">        
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"     
+        android:textSize="15sp"
+        android:text="Card top up"
+        android:gravity="center"    
+        android:layout_marginLeft="10dp"
+        android:background="@null" />
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"    
+        android:textSize="15sp"
+        android:text="Bank top up"
+        android:layout_gravity="right" 
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:background="@null" />
+  </LinearLayout>   
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="2dp"
+       android:layout_marginBottom="5dp">          
+      <View
+       android:layout_width="150dp"
+       android:layout_height="5dp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="10dp"     
+       android:background="@color/grey" />  
+      <View
+       android:layout_width="150dp"
+       android:layout_height="5dp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="10dp"     
+       android:background="@color/grey" />          
+    </LinearLayout>    
+  </LinearLayout>      
+          
+    <include layout="@layout/card_top_up"></include>
+    <include layout="@layout/bank_top_up"></include>
+  
+</LinearLayout> 
+      
