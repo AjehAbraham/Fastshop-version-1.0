@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+      
+
+<LinearLayout
+        android:id="@+id/parentLayout" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+       <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_margin="5dp"    
+        android:src="@drawable/outline_close_white_48"/>
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort by "     
+        android:src="@drawable/iwatch_black"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="5dp"    
+        android:src="@drawable/outline_close_white_48"/>
+       <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"     
+        android:background="@drawable/cornered_layout"/>
+   </LinearLayout>
+    
+      <LinearLayout
+        android:id="@+id/pricing_range_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center_horizontal">
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pricing range "     
+        android:src="@drawable/iwatch_black"/>
+       <SeekBar
+         android:id="@+id/seekBar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:max="100"
+         android:progress="1"
+         android:thumbTint="@color/dark_blue"
+         android:progressTint="@color/home_page"
+         android:progressBackgroundTint="@color/dark_blue"/>
+       <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="enter amount"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textCursorDrawable="@drawable/text_cursor"
+        android:background="@drawable/edit_text"/>
+      </LinearLayout>
+ 
+       <LinearLayout
+        android:id="@+id/brand_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center_horizontal">
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Brand"   
+        android:textSize="15sp"
+        android:src="@drawable/iwatch_black"/>
+        <EditText
+         android:id="@+id/brand_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:hint="start typing brand name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textCursorDrawable="@drawable/text_cursor"
+        android:background="@drawable/edit_text"/>
+       <ListView
+         android:id="@+id/listView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/cornered_layout"/>
+      </LinearLayout>
+ 
+        <Button
+        android:id="@+id/sort_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="13sp"
+        android:text="Sort search"
+        android:padding="5dp"
+        android:layout_gravity="center" 
+        android:gravity="center" 
+        android:layout_margin="10dp" 
+        android:textColor="@color/white"
+        android:background="@drawable/cornered_default"/>
+</LinearLayout>
+    
+</LinearLayout>
